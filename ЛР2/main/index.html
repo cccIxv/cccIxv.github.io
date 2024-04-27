@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+    <title>Pes Patron</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <main class="wrapper">
+        <aside class="sidebar">
+            <figure class="avatar">
+                <img class="img" src="./img/photo.png" alt="Photo">
+            </figure>
+
+            <div class="aside-content">
+                <section>
+                    <h3 id="personal">Особисті дані</h3>
+                    <hr class="line-aside">
+
+                    <ul>
+                        <li>
+                            Ім'я
+                            <p class="text-aside">Белей Максим</p>
+                        </li>
+                        <li>
+                            Адреса
+                            <p class="text-aside">вул. Стуса, буд. 14Б, кв. 33 76006 Івано-Франківськ</p>
+                        </li>
+                        <li>
+                            <address>
+                                Номер телефону<br>
+                                <span class="text-aside"><a href="tel:+380951056661">+38 095 105-66-61</a></span>
+                            </address>
+                        </li>
+                        <li>
+                            <address>
+                                Email<br>
+                                <span class="text-aside"><a
+                                        href="mailto:maksym.belei-pi2101@kep.nung.edu.ua">maksym.belei-pi2101@kep.nung.edu.ua</a></span>
+                            </address>
+                        </li>
+                        <li>
+                            Дата народження
+                            <p class="text-aside"><time datetime="2006-09-26">26-09-2006</time></p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Інтереси</h3>
+                    <hr class="line-aside">
+
+                    <ul>
+                        <li>Програмування</li>
+                        <li>Книги</li>
+                        <li>Психологія</li>
+                        <li>Дайвінг</li>
+                        <li>Спорт</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Мови</h3>
+                    <hr class="line-aside">
+
+                    <ul class="lang-block">
+                        <li class="aside-lang">
+                            Українська
+                            <p class="text-aside">Рідна мова</p>
+                        </li>
+                        <li class="aside-lang">
+                            Англійська
+                            <p class="text-aside">Добре</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+
+        <div class="right-side">
+            <header class="site-head">
+                <nav class="wrapper-menu">
+                    <ul class="menu">
+                        <li><a href="#">Головна</a></li>
+                        <li><a class="nt" href="#personal">Особисті дані</a></li>
+                        <li><a href="#education">Освіта</a></li>
+                        <li><a class="nt" href="#skill">Навички</a></li>
+                        <li><a href="#portfolio">Портфоліо</a></li>
+                    </ul>
+                </nav>
+                <!-- <hr class="bline"> -->
+            </header>
+
+            <div class="right-side-content">
+                <h1>Белей Максим</h1>
+                <hr class="bline">
+
+                <section class="right-article">
+                    <header>
+                        <h2>Досвід роботи</h2>
+                        <hr>
+                    </header>
+
+
+                    <section class="article-section">
+                        <header class="section-head">
+                            <h3>Java-розробник</h3>
+                            <p class="time-period"><time datetime="2009-09">вер. 2009</time> - <time
+                                    datetime="2024-04">теп. час</time></p>
+                        </header>
+                        <i>EPAM, Київ</i>
+                        <p class="text">Розробка програмного забезпечення, додатків, веб інтерфейсів відповідно до вимог
+                            технічного завдання</p>
+                    </section>
+
+                    <section class="article-section">
+                        <header class="section-head">
+                            <h3>Веб-розробник</h3>
+                            <p class="time-period"><time datetime="2004-04">кві. 2004</time> - <time
+                                    datetime="2009-08">cep. 2009</time></p>
+                        </header>
+                        <i>SoftServer, Київ</i>
+                        <p class="text">Розробка програмного забезпечення; створення систем автоматичної перевірки
+                            програмного забезпечення; створення, супровід
+                            і тестування веб-ресурсів</p>
+                    </section>
+
+                    <section class="article-section">
+                        <header class="section-head">
+                            <h3>Лаборант кафедри робототехніки</h3>
+                            <p class="time-period"><time datetime="2002-08">cep. 2002</time> - <time
+                                    datetime="2004-03">бер. 2004</time></p>
+                        </header>
+                        <i>Національний університет "Львівська політехніка", Львів</i>
+                        <p class="text">Забезпечення студентів методичними матеріалами; складання звітів кафедри та
+                            інших документів; надання допомоги
+                            викладачам у підготовці обладнання та проведенні занять.</p>
+                    </section>
+                </section>
+
+                <section class="right-article">
+                    <h2 id="education">Освіта і кваліфікації</h2>
+                    <hr>
+
+                    <section class="article-section">
+                        <header class="section-head">
+                            <h3>Бакалавр</h3>
+                            <p class="time-period"><time datetime="2005-09">вер. 2005</time> - <time
+                                    datetime="2009-07">лип. 2009</time></p>
+                        </header>
+                        <i>Національний університет "Львівська політехніка", Львів</i>
+                        <p class="text">Спеціальність "Інформаційні системи і технології"</p>
+                    </section>
+
+                    <section class="article-section">
+                        <header class="section-head">
+                            <h3>Молодший бакалавр</h3>
+                            <p class="time-period"><time datetime="2001-09">вер. 2001</time> - <time
+                                    datetime="2005-07">лип. 2005</time></p>
+                        </header>
+                        <i>ВСП "Фаховий коледж електронних приладів ІФНТУНГ", Івано-Франківськ</i>
+                        <p class="text">Спеціальність "Інженерія програмного забезпечення"</p>
+                    </section>
+                </section>
+
+                <section class="right-article">
+                    <h2>Курси</h2>
+                    <hr>
+
+                    <section class="article-section">
+                        <header class="section-head">
+                            <h3>Англійська для ІТ</h3>
+                            <p class="time-period"><time datetime="2004-09">вер. 2004</time> - <time
+                                    datetime="2005-06">чер. 2005</time></p>
+                        </header>
+                        <i>Мовна школа Speak Up (Київ)</i>
+                    </section>
+
+                    <section class="article-section">
+                        <header class="section-head">
+                            <h3>Cisco: побудова розподілених мереж</h3>
+                            <p class="time-period"><time datetime="2003-05">тра. 2003</time> - <time
+                                    datetime="2004-03">бер. 2004</time></p>
+                        </header>
+                        <i>Учбовий центр "Мережеві технології" (Київ)</i>
+                    </section>
+
+                    <section class="article-section">
+                        <header class="section-head">
+                            <h3>Програмування на Java</h3>
+                            <p class="time-period"><time datetime="2003-01">січ. 2003</time> - <time
+                                    datetime="2003-03">бер. 2003</time></p>
+                        </header>
+                        <i>JavaRush (онлайн)</i>
+                    </section>
+
+                    <section class="article-section">
+                        <div class="section-head">
+                            <h3>Програмування на мові C#</h3>
+                            <p class="time-period"><time datetime="2002-09">вер. 2002</time> - <time
+                                    datetime="2002-11">лис. 2002</time></p>
+                        </div>
+                        <i>Регіональний центр ІТ (Харків)</i>
+                    </section>
+                </section>
+
+                <section class="right-article">
+                    <h2 id="skill">Навички</h2>
+                    <hr>
+
+                    <div class="article-section">
+                        <h3>C/C++, HNML&CSS, Java, Python, SQL</h3>
+                    </div>
+                </section>
+
+                <section class="right-article">
+                    <h2 id="portfolio">Мої роботи</h2>
+                    <hr>
+
+                    <div class="block-portfolio">
+                        <ol class="buttons">
+                            <li class="background-btn"><a class="btn" href="../lr1/main" target="_blank">Лабораторна
+                                    робота №1</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Лабораторна робота №2</a>
+                            </li>
+                            <li class="background-btn"><a class="btn" href="#structure-html" target="_blank">Лабораторна
+                                    робота №3</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Практична робота №1</a>
+                            </li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Spotify</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Steam</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Google</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Spotify</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Steam</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Google</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Spotify</a></li>
+                            <li class="background-btn"><a class="btn" href="" target="_blank">Steam</a></li>
+
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="right-article">
+                    <h2 id="structure-html">Базова структуру HTML-документа</h2>
+                    <hr>
+
+                    <div class="structure-html">
+                        <p>
+                        <p>&lt;html lang="uk"&gt;</p>
+                        <br>
+                        <p>&lt;head&gt;</p>
+                        <p> &lt;meta charset="UTF-8"&gt;</p>
+                        <p> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+                        <p> &lt;title&gt;&lt;/title&gt;</p>
+                        <p>&lt;/head&gt;</p>
+                        <br>
+                        <p>&lt;body&gt;</p>
+                        <p>&lt;/body&gt;</p>
+                        <br>
+                        <p>&lt;/html&gt;</p>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

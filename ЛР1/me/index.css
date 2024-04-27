@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: url("https://www.wallpapersun.com/wp-content/uploads/2020/11/Windows-xp-wallpaper-18.jpg");
+    background-size: cover;
+}
+
+.box header {
+    margin-bottom: 3%;
+    margin-top: 2%;
+    border-radius: 30px;
+    background: #FFF;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+}
+
+.box header a {
+    position: absolute;
+    left: 2%;
+    top: 2%;    
+}
+
+.box header a img {
+    width: 27%;
+    border-radius: 40px;
+    background: #FFF;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+}
+
+.box .list {
+    /* box-shadow: 6px 5px 5px rgba(0, 0, 0, 0.3); */
+    border-radius: 40px;
+    background: #FFF;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.box .list ul {
+    font-size: 30px;
+}

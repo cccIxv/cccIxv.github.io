@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 980px;
+    margin: 0 auto 0;
+}
+
+.sidebar {
+    width: 25%;
+    height: 100;
+    background-color: #3a5e90;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 35px auto 0;
+}
+
+.img {
+    display: block;
+    width: 100%;
+}
+
+.aside-content {
+    width: 100%;
+    color: #fff;
+    padding: 0px 0px 25px 25px;
+}
+
+address {
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.aside-content h3 {
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.aside-content li {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+hr {
+    margin: 15px 0;
+    height: 2px;
+    background-color: #dbcece;
+    border: none;
+}
+
+h1 {
+    margin: 15px 0;
+    font-size: 32px;
+}
+
+.sidebar hr {
+    background-color: #fff;
+}
+
+.text-aside {
+    font-weight: 200;
+}
+
+.text-aside a {
+    color: #fff;
+}
+
+.text-aside a:hover {
+    color: #dbcece;
+}
+
+.aside-lang {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-block {
+    padding-right: 20px;
+}
+
+.bline {
+    height: 3px;
+}
+
+.right-side {
+    width: calc(75% - 6px);
+    background-color: #f6f6fa;
+}
+
+.right-side-content {
+    padding: 0 2% 2% 2%;
+}
+
+.right-side-content h2 {
+    font-size: 24px;
+    padding-top: 5px;
+}
+
+.article-section {
+    padding-bottom: 20px;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.article-section h3 {
+    font-size: 18px;
+}
+
+.time-period,
+.time-period time,
+.structure-html p {
+    font-size: 16px;
+}
+
+.article-section i {
+    font-size: 15px;
+}
+
+.article-section .text {
+    padding-top: 5px;
+}
+
+.buttons {
+    margin-left: 20px;
+}
+
+.site-head {
+    max-width: 980px;
+    margin: 0 auto 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    width: 20%;
+}
+
+.menu a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition-duration: 0.4s;
+    border-bottom: 3px solid #dbcece;
+}
+
+
+.menu a:hover {
+    background-color: #dbcece;
+    color: #fff;
+    border: 2px solid #dbcece;
+    border-radius: 30px;
+}
+
+.background-btn {
+    border: 3px solid #dbcece;
+    border-radius: 25px;
+    list-style-position: inside;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    height: 55px;
+    width: max-content;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #dbcece;
+}
+
+
+.btn {
+    display: inline-flex;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    height: 95%;
+    border: 2px solid #dbcece;
+    border-radius: 30px;
+    align-items: center;
+    padding: 0 50px;
+    margin: 1px 1px 1px;
+    transition-duration: 0.4s;
+    background-color: #dbcece;
+}
+
+.btn:hover {
+    background-color: #c0b7b5;
+    border: 2px solid #c0b7b5;
+    color: #fff;
+}

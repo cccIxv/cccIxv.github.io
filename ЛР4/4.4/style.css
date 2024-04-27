@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 190px;
+    height: 70px;
+    border: 5px solid #000;
+    margin: 25px;
+    position: relative;
+}
+
+div::after {
+    content: "";
+    width: 12px;
+    height: 24px;
+    background: #000;
+    position: absolute;
+    left: 100%;
+    top: calc(50% - 12px);
+}
+
+div::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+}
+
+.battery-one::before {
+    width: 33%;
+    background: rgb(255, 20, 20);
+}
+
+.battery-two::before {
+    width: 66%;
+    background: rgb(72, 202, 11);
+}
+
+.battery-three::before {
+    width: 100%;
+    background: rgb(52, 156, 52);
+}
