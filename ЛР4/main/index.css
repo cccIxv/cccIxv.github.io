@@ -64,7 +64,7 @@ h1 {
 }
 
 .background-btn::before {
-    content: "2." counter(a);
+    content: "4." counter(a);
 }
 
 .btn {
@@ -78,6 +78,7 @@ h1 {
     transition-duration: 0.4s;
     background-color: #856868;
     text-decoration: none;
+
 }
 
 .btn:hover {
