@@ -5,19 +5,20 @@
 }
 
 body {
-	font-family: "Inter", sans-serif; /*описати призначення властивості у проєкті*/
+	font-family: "Inter", sans-serif; /*Задає шрифт "Inter" для всіх елементів класу body, 
+	якщо шрифт "Inter" не вдалось завантажити то використовується базовиш шрифт з класу sens-shiref	вроді Times new roman */
 }
 
 img {
-	display: block; /*описати призначення властивості у проєкті*/
+	display: block; /*перетворює img з лінійного елемента на блочний*/
 	width: 100%;
 }
 
 .page-wrapper {
-	max-width: 860px; /*описати призначення властивості у проєкті*/
-	width: 100%; /*описати призначення властивості у проєкті*/
-	margin: (*_*_*);
-	padding: 30px 10px 20px; /*описати призначення властивості у проєкті*/
+	max-width: 860px; /*Задає максимально можливу ширину обгортки в 860пх*/
+	width: 100%; /*встановлює ширину врапера н а 100% тобто 860пх*/
+	margin: 0 calc(50% - 430px);
+	padding: 30px 10px 20px; /*внутрішні відступи в блоці ,page-wrapper зверху 30пх знизу 20пх зліва справа по 10пх*/
 	background-color: #008499;
 }
 
@@ -28,36 +29,36 @@ img {
 
 header {
 	height: 138px;
-	background-image: (*_*_*);
-	background-repeat: no-repeat; /*описати призначення властивості у проєкті*/
-	background-size: contain; /*описати призначення властивості у проєкті*/
-	background-position: center; /*описати призначення властивості у проєкті*/
+	background-image: url(../images/header.png);
+	background-repeat: no-repeat; /*; - дана властивість потрібна для тошо щоб фон у блоці header: не повторювався якщо його розмір менший контейнерп*/
+	background-size: contain; /*; - дана властивість потрібна для розтягування фону за розмірами контейнера зберігаючи пропорції фону*/
+	background-position: center; /*; - дана властивість потрібна для центрування фонового зображення у блоці header:*/
 }
 
 main {
-	padding: 20px 30px; /*описати призначення властивості у проєкті*/
+	padding: 20px 30px; /*внутрішні відступи в блоці main зверху знизу по 20пх зліва справа по 30пх*/
 	font-weight: 500;
-	font-size: 1.2rem; /*описати призначення властивості у проєкті*/
+	font-size: 1.2rem; /*розмір шрифту 1.2 від розміру початкового елементу, в нашому випадкку bode*/
 }
 
 .mb-15 {
-	margin-bottom: (*_*_*);
+	margin-bottom: 15px;
 }
 
 .mb-20 {
-	(*_*_*)
+	margin-bottom: 20px;
 }
 
 .d-block {
-	(*_*_*)
+	display: block;
 }
 
 .t-center {
-	(*_*_*)
+	text-align: center;
 }
 
 .list { 
-	padding-left: 60px; /*описати призначення властивості у проєкті*/
+	padding-left: 60px; /*внутрішні відступи зліва в блоці .list 60пх*/
 }
 
 .services-list {
@@ -67,18 +68,18 @@ main {
 }
 
 .services-list-item {
-	width: calc(50% - 15px); /*описати призначення властивості у проєкті*/
+	width: calc(33.3% - 20px); /*ширина блокку .services-list-item { */
 }
 
 .services-list-item__title {
-	padding: 15px 0; /*описати призначення властивості у проєкті*/
-	(*_*_*)
+	padding: 15px 0; /*внутрішні відступи в блоці .services-list-item__title { зверху знизу по 115пх зліва справа по 0*/
+	font-weight: 700;
 	letter-spacing: 1px;
 }
 
 .btn {
 	height: 50px;
-	(*_*_*)
+	text-align: center;
 	line-height: 50px;
 	background-color: #f53947;
 	color: #fff;
@@ -86,17 +87,17 @@ main {
 }
 
 .text-section a[href^='tel:'] {
-	(*_*_*)
-	(*_*_*)
+	text-decoration: none;
+	color: #000;
 }
 
 .link-btn {
-	(*_*_*)
+	text-decoration: none;
 }
 
 footer {
 	padding: 25px 0;
-	(*_*_*)
+	background-color: #008499;
 	color: #fff;
 }
 
@@ -105,20 +106,20 @@ footer {
 }
 
 .social-links a {
-	(*_*_*)
-	(*_*_*)
+	color: #fff;
+	text-decoration: none;
 }
 
 
-.social-links a:not(:last-child) /*описати даний селектор у проєкті*/ {
-	(*_*_*)
+.social-links a:not(:last-child) /*задає спилі до всіх посилань крім останнього в класі .social-links*/ {
+	margin-right: 20px;
 }
 
-footer p:nth-child(2) /*описати даний селектор у проєкті*/ {
-	(*_*_*)
+footer p:nth-child(2) /*задає стилі до лругого параграфа футера*/ {
+	font-weight: 700;
 }
 
-footer p:last-child a /*описати даний селектор у проєкті*/ {
-	(*_*_*)
-	(*_*_*)
+footer p:last-child a /*застосовуються до всіх посилань які є в останньому параграфі футера*/ {
+	font-weight: 700;
+	color: #fff;
 }
