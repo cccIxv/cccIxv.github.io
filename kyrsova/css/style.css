@@ -1565,6 +1565,7 @@ address {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 100px;
+        justify-content: center;
     }
     .section-subtitle{
         font-size: 50px;
