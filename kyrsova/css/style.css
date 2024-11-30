@@ -343,6 +343,7 @@ main img {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .trip-card {
@@ -557,6 +558,7 @@ main img {
     background: url('../img/background-section.png') no-repeat center center/cover;
     padding: 120px 20px;
     color: white;
+    align-items: center;
 }
 
 .swiper-slide img {
@@ -1230,6 +1232,7 @@ address {
     flex-wrap: wrap;
     gap: 30px;
     max-width: 615px;
+    justify-content: center;
 }
 
 .history-blocks img {
@@ -1646,6 +1649,7 @@ address {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .h-block-text {
         font-size: 30px;
