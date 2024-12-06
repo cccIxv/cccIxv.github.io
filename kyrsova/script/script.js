@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="line-block"></div>
                 <p class="price-text">${card.description}</p>
                 ${card.features.map(feature => `<p class="price-text"><i class="fa-solid fa-check" style="color: #6E6E6E;"></i>${feature}</p>`).join('')}
-                <a href="#">Докладніше</a>
+                <a href="#offer">Докладніше</a>
             `;
                 priceCardsBlock.appendChild(cardElement);
             });
