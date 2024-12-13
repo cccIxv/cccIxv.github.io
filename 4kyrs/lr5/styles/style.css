@@ -37,7 +37,7 @@ h1 {
 }
 
 input[type="range"],
-input[type="number"],
+input[type="text"],
 select {
     width: calc(100% - 20px);
     padding: 5px;
@@ -62,13 +62,16 @@ textarea {
 }
 
 /* Preview Box */
-#preview {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
+#block {
+    width: 100px;
+    height: 100px;
     background: #f4f4f4;
     border: 1px dashed #ccc;
-    border-radius: 10px;
+    border-radius: 0;
     font-size: 16px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background-origin: border-box;
+    background-position: center;
 }

@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish CSS Generator</title>
+    <title>CSS Generator</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <div id="generator">
         <h1>CSS Generator</h1>
         <div class="property">
-            <label for="borderRadius">Border Radius:</label>
-            <input type="range" id="borderRadius" min="0" max="100" value="0" oninput="updateCSS()">
-            <input type="number" id="borderRadiusValue" min="0" max="100" value="0" oninput="updateCSS()">
+            Верхній лівий радіус:
+            <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
+            <input type="text" id="ttl" value="0" oninput="generate()">
         </div>
         <div class="property">
-            <label for="display">Display:</label>
-            <select id="display" onchange="updateCSS()">
-                <option value="block">Block</option>
-                <option value="inline">Inline</option>
-                <option value="flex">Flex</option>
-                <option value="grid">Grid</option>
-                <option value="none">None</option>
+            Верхній правий радіус:
+            <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
+            <input type="text" id="ttr" value="0" oninput="generate()">
+        </div>
+        <div class="property">
+            Нижній правий радіус:
+            <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
+            <input type="text" id="tbr" value="0" oninput="generate()">
+        </div>
+        <div class="property">
+            Нижній лівий радіус:
+            <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
+            <input type="text" id="tbl" value="0" oninput="generate()">
+        </div>
+        <div class="property">
+            Background Origin:
+            <select id="backgroundOrigin" onchange="generate()">
+                <option value="border-box">border-box</option>
+                <option value="padding-box">padding-box</option>
+                <option value="content-box">content-box</option>
             </select>
         </div>
         <div class="property">
-            <label for="fontSize">Font Size:</label>
-            <input type="range" id="fontSize" min="10" max="50" value="16" oninput="updateCSS()">
-            <input type="number" id="fontSizeValue" min="10" max="50" value="16" oninput="updateCSS()">
+            Background Position:
+            <input type="text" id="backgroundPosition" value="center" oninput="generate()">
         </div>
         <textarea id="cssOutput" readonly></textarea>
-        <div id="preview">
-            Preview Text
-        </div>
+        <div id="block">Preview Text</div>
     </div>
     <script src="javascript/script.js"></script>
 </body>
+
 </html>
