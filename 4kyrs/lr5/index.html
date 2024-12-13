@@ -4,47 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Generator</title>
+    <title>Tabbed CSS Generator</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <div id="generator">
-        <h1>CSS Generator</h1>
-        <div class="property">
-            Верхній лівий радіус:
-            <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
-            <input type="text" id="ttl" value="0" oninput="generate()">
+    <div id="tabs">
+        <div class="tab whiteborder">Tab 1</div>
+        <div class="tab">Tab 2</div>
+        <div class="tab">Tab 3</div>
+        <div class="tabContent">
+            <div id="generator">
+                <h1>CSS Generator</h1>
+                <div class="property">
+                    Верхній лівий радіус:
+                    <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
+                    <input type="text" id="ttl" value="0" oninput="generate()">
+                </div>
+                <div class="property">
+                    Верхній правий радіус:
+                    <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
+                    <input type="text" id="ttr" value="0" oninput="generate()">
+                </div>
+                <div class="property">
+                    Нижній правий радіус:
+                    <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
+                    <input type="text" id="tbr" value="0" oninput="generate()">
+                </div>
+                <div class="property">
+                    Нижній лівий радіус:
+                    <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
+                    <input type="text" id="tbl" value="0" oninput="generate()">
+                </div>
+                <div class="property">
+                    Background Origin:
+                    <select id="backgroundOrigin" onchange="generate()">
+                        <option value="border-box">border-box</option>
+                        <option value="padding-box">padding-box</option>
+                        <option value="content-box">content-box</option>
+                    </select>
+                </div>
+                <div class="property">
+                    Background Position:
+                    <input type="text" id="backgroundPosition" value="center" oninput="generate()">
+                </div>
+                <textarea id="cssOutput" readonly></textarea>
+                <div id="block">Preview Text</div>
+            </div>
         </div>
-        <div class="property">
-            Верхній правий радіус:
-            <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
-            <input type="text" id="ttr" value="0" oninput="generate()">
-        </div>
-        <div class="property">
-            Нижній правий радіус:
-            <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
-            <input type="text" id="tbr" value="0" oninput="generate()">
-        </div>
-        <div class="property">
-            Нижній лівий радіус:
-            <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
-            <input type="text" id="tbl" value="0" oninput="generate()">
-        </div>
-        <div class="property">
-            Background Origin:
-            <select id="backgroundOrigin" onchange="generate()">
-                <option value="border-box">border-box</option>
-                <option value="padding-box">padding-box</option>
-                <option value="content-box">content-box</option>
-            </select>
-        </div>
-        <div class="property">
-            Background Position:
-            <input type="text" id="backgroundPosition" value="center" oninput="generate()">
-        </div>
-        <textarea id="cssOutput" readonly></textarea>
-        <div id="block">Preview Text</div>
+        <div class="tabContent hide">Content 2</div>
+        <div class="tabContent hide">Content 3</div>
     </div>
     <script src="javascript/script.js"></script>
 </body>
