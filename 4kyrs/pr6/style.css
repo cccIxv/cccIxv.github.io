@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+#map {
+    height: 100vh;
+}
+
+.input-group {
+    position: absolute;
+    z-index: 1001;
+    right: 0;
+    margin: 10px!important;
+    max-width: 250px!important;
+    padding-right: 0!important;
+}
+
+button {
+    background-color: white;
+}
