@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Kanit Light", sans-serif;
+}
+
+.todo-list {
+  display: flex;
+}
+
+.todo-list__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+}
+
+.todo-list__container__block {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.todo-list__container__block>div {
+  display: flex;
+  width: 100%;
+}
+
+.todo-list__container__block>div:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.todo-list__container__block>div>* {
+  width: 100%;
+}
+
+.todo-list__container__block>div,
+.todo-list__container__block input {
+  padding: 5px;
+}
+
+.todo-list__container__block input {
+  border: 1px solid black;
+}
+
+.todo-list__container__block .task-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-list__container__block .task-block .task {
+  flex-grow: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-list__container__block
