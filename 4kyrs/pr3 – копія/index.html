@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Tasks</title>
+    <link rel="stylesheet" href="styls.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Task 1: Real-time Clock -->
+        <div class="task">
+            <h2>Task 1: Real-time Clock</h2>
+            <label for="clockInput">Clock:</label>
+            <input type="text" id="clockInput" size="10" readonly>
+        </div>
+
+        <!-- Task 2.5: Update Time Button -->
+        <div class="task">
+            <h2>Task 2.5: Update Time Button</h2>
+            <h1 id="currentClock"></h1>
+            <button id="updateClockButton">Update Time</button>
+        </div>
+
+        <!-- Task 3: Typing Text Animation -->
+        <div class="task">
+            <h2>Task 3: Typing Text Animation</h2>
+            <label for="textInput">Input Text:</label>
+            <input type="text" id="textInput" placeholder="Enter text here">
+            <button id="printTextButton">Print Text</button>
+            <h1 id="animatedText"></h1>
+        </div>
+
+        <!-- Task 4: Betting Simulation -->
+        <div class="task">
+            <h2>Task 4: Betting Simulation</h2>
+            <label for="betInput">Enter Bet Amount:</label>
+            <input type="number" id="betInput" placeholder="Enter amount">
+            <button id="placeBetButton">Place Bet</button>
+            <h1 id="betResult"></h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
