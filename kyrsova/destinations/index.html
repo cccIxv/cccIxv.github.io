@@ -17,10 +17,25 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
-            <h2>Контакти</h2>
-            <p>Зв'яжіться з намиза телефоном <br><strong>+01 483 593 284</strong><br> або напишіть на</p>
-            <a href="mailto:info@travel.com" class="contact-link">info@travel.com</a>
+            <h2>Зворотний зв'язок</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше ім'я</label>
+                    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" placeholder="Введіть вашу пошту" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Напишіть ваше повідомлення"
+                        required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Надіслати</button>
+            </form>
         </div>
+    </div>
     </div>
     <header>
         <div class="logo-phone"><img src="../img/logo-white.png" alt="img"></div>

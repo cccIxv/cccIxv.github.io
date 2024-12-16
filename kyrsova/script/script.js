@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('modal');
     const contactLink = document.getElementById('contact-link');
     const closeBtn = document.querySelector('.close-btn');
+    const contactForm = document.getElementById('contact-form');
 
     contactLink.addEventListener('click', (event) => {
         event.preventDefault();
@@ -44,10 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'none';
         }
     });
+
+    contactForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Дякуємо за ваше повідомлення! Ми зв’яжемося з вами найближчим часом.');
+        modal.style.display = 'none';
+        contactForm.reset();
+    });
 });
 
 //Генерацыя через json на сторінці напрямки
-
 document.addEventListener('DOMContentLoaded', function () {
     fetch('https://raw.githubusercontent.com/cccIxv/kyrsova/main/data.json')
         .then(response => {
