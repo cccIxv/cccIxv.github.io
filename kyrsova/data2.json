@@ -1,6 +1,6 @@
 [
     {
-        "image": "https://raw.githubusercontent.com/cccIxv/kyrsova/main/img/price-card-img.png",
+        "image": "https://raw.githubusercontent.com/cccIxv/cccIxv.github.io/main/kyrsova/img/price-card-img.png",
         "title": "Страхування",
         "price": "$ 50.00",
         "unit": "/ Подорож",
@@ -8,7 +8,7 @@
         "features": ["Скасування поїздки", "Втрата багажу", "Гнучкі дати"]
     },
     {
-        "image": "https://raw.githubusercontent.com/cccIxv/kyrsova/main/img/price-card-img2.png",
+        "image": "https://raw.githubusercontent.com/cccIxv/cccIxv.github.io/main/kyrsova/img/price-card-img2.png",
         "title": "Медичне страхування",
         "price": "$ 65.00",
         "unit": "/ Подорож",
@@ -16,7 +16,7 @@
         "features": ["Лікар доступний", "Витрати", "Лікарняні витрати"]
     },
     {
-        "image": "https://raw.githubusercontent.com/cccIxv/kyrsova/main/img/price-card-img3.png",
+        "image": "https://raw.githubusercontent.com/cccIxv/cccIxv.github.io/main/kyrsova/img/price-card-img3.png",
         "title": "Повне покриття",
         "price": "$ 70.00",
         "unit": "/ Подорож",
